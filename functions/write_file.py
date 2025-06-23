@@ -25,8 +25,8 @@ def write_file(working_directory, file_path, content):
         return f'Successfully wrote to "{file_path}" ({len(content)} characters written)'
 
     except PermissionError:
-        return f"Error: Unable to access directory {file_path}"
+        return f"Error: Unable to access {file_path}"
     except FileNotFoundError:
-        return f"Error: Unable to write contents as {file_path} does not exist"
+        return f"Error: Unable to write contents to {file_path} because path does not exist"
     except Exception:
         return f"Error: Unable to access {file_path}"
