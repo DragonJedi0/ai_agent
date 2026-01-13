@@ -1,0 +1,20 @@
+[project]
+name = "ai-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Samuel Ybarra", email = "sybarra2076@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "google-genai>=1.57.0",
+]
+
+[project.scripts]
+ai-agent = "ai_agent:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
